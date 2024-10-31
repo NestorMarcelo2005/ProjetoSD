@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family artix7 -verilog esquemageral_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquemageral.sch 
+sch2hdl -intstyle ise -family artix7 -verilog esquemageral_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquemageral.sch 

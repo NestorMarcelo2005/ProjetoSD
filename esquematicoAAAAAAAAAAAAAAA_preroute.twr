@@ -1,0 +1,364 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml esquematicoAAAAAAAAAAAAAAA_preroute.twx
+esquematicoAAAAAAAAAAAAAAA_map.ncd -o esquematicoAAAAAAAAAAAAAAA_preroute.twr
+esquematicoAAAAAAAAAAAAAAA.pcf
+
+Design file:              esquematicoAAAAAAAAAAAAAAA_map.ncd
+Physical constraint file: esquematicoAAAAAAAAAAAAAAA.pcf
+Device,package,speed:     xc7a100t,ftg256,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+-----------------+-----------------------------+---------+
+Source Pad       |Destination Pad              |  Delay  |
+-----------------+-----------------------------+---------+
+weightInGrams<0> |weightInKilogramsFraction<0> |   32.668|
+weightInGrams<0> |weightInKilogramsFraction<1> |   31.344|
+weightInGrams<0> |weightInKilogramsFraction<2> |   29.150|
+weightInGrams<0> |weightInKilogramsFraction<3> |   27.152|
+weightInGrams<0> |weightInKilogramsFraction<4> |   23.931|
+weightInGrams<0> |weightInKilogramsFraction<5> |   21.589|
+weightInGrams<0> |weightInKilogramsFraction<6> |   18.687|
+weightInGrams<0> |weightInKilogramsFraction<7> |   16.768|
+weightInGrams<0> |weightInKilogramsFraction<8> |   14.618|
+weightInGrams<0> |weightInKilogramsFraction<9> |   12.114|
+weightInGrams<0> |weightInKilogramsFraction<10>|   10.756|
+weightInGrams<1> |weightInKilogramsFraction<0> |   32.646|
+weightInGrams<1> |weightInKilogramsFraction<1> |   31.322|
+weightInGrams<1> |weightInKilogramsFraction<2> |   29.128|
+weightInGrams<1> |weightInKilogramsFraction<3> |   27.130|
+weightInGrams<1> |weightInKilogramsFraction<4> |   23.909|
+weightInGrams<1> |weightInKilogramsFraction<5> |   21.567|
+weightInGrams<1> |weightInKilogramsFraction<6> |   18.665|
+weightInGrams<1> |weightInKilogramsFraction<7> |   16.746|
+weightInGrams<1> |weightInKilogramsFraction<8> |   14.596|
+weightInGrams<1> |weightInKilogramsFraction<9> |   12.092|
+weightInGrams<1> |weightInKilogramsFraction<10>|   10.734|
+weightInGrams<2> |weightInKilogramsFraction<0> |   32.051|
+weightInGrams<2> |weightInKilogramsFraction<1> |   30.727|
+weightInGrams<2> |weightInKilogramsFraction<2> |   28.533|
+weightInGrams<2> |weightInKilogramsFraction<3> |   26.535|
+weightInGrams<2> |weightInKilogramsFraction<4> |   23.314|
+weightInGrams<2> |weightInKilogramsFraction<5> |   20.972|
+weightInGrams<2> |weightInKilogramsFraction<6> |   18.070|
+weightInGrams<2> |weightInKilogramsFraction<7> |   16.151|
+weightInGrams<2> |weightInKilogramsFraction<8> |   14.001|
+weightInGrams<2> |weightInKilogramsFraction<9> |   11.497|
+weightInGrams<2> |weightInKilogramsFraction<10>|   10.139|
+weightInGrams<3> |weightInKilogramsFraction<0> |   79.781|
+weightInGrams<3> |weightInKilogramsFraction<1> |   78.457|
+weightInGrams<3> |weightInKilogramsFraction<2> |   76.263|
+weightInGrams<3> |weightInKilogramsFraction<3> |   74.265|
+weightInGrams<3> |weightInKilogramsFraction<4> |   71.044|
+weightInGrams<3> |weightInKilogramsFraction<5> |   68.702|
+weightInGrams<3> |weightInKilogramsFraction<6> |   65.800|
+weightInGrams<3> |weightInKilogramsFraction<7> |   63.881|
+weightInGrams<3> |weightInKilogramsFraction<8> |   61.731|
+weightInGrams<3> |weightInKilogramsFraction<9> |   59.227|
+weightInGrams<3> |weightInKilogramsFraction<10>|   57.869|
+weightInGrams<3> |weightInKilogramsInteger<0>  |   50.170|
+weightInGrams<3> |weightInKilogramsInteger<1>  |   46.772|
+weightInGrams<3> |weightInKilogramsInteger<2>  |   44.896|
+weightInGrams<3> |weightInKilogramsInteger<3>  |   41.121|
+weightInGrams<3> |weightInKilogramsInteger<4>  |   38.666|
+weightInGrams<3> |weightInKilogramsInteger<5>  |   34.908|
+weightInGrams<3> |weightInKilogramsInteger<6>  |   32.682|
+weightInGrams<3> |weightInKilogramsInteger<7>  |   29.154|
+weightInGrams<3> |weightInKilogramsInteger<8>  |   25.619|
+weightInGrams<3> |weightInKilogramsInteger<9>  |   23.047|
+weightInGrams<3> |weightInKilogramsInteger<10> |   20.180|
+weightInGrams<3> |weightInKilogramsInteger<11> |   18.311|
+weightInGrams<3> |weightInKilogramsInteger<12> |   15.858|
+weightInGrams<3> |weightInKilogramsInteger<13> |   13.150|
+weightInGrams<4> |weightInKilogramsFraction<0> |   79.654|
+weightInGrams<4> |weightInKilogramsFraction<1> |   78.330|
+weightInGrams<4> |weightInKilogramsFraction<2> |   76.136|
+weightInGrams<4> |weightInKilogramsFraction<3> |   74.138|
+weightInGrams<4> |weightInKilogramsFraction<4> |   70.917|
+weightInGrams<4> |weightInKilogramsFraction<5> |   68.575|
+weightInGrams<4> |weightInKilogramsFraction<6> |   65.673|
+weightInGrams<4> |weightInKilogramsFraction<7> |   63.754|
+weightInGrams<4> |weightInKilogramsFraction<8> |   61.604|
+weightInGrams<4> |weightInKilogramsFraction<9> |   59.100|
+weightInGrams<4> |weightInKilogramsFraction<10>|   57.742|
+weightInGrams<4> |weightInKilogramsInteger<0>  |   50.043|
+weightInGrams<4> |weightInKilogramsInteger<1>  |   46.645|
+weightInGrams<4> |weightInKilogramsInteger<2>  |   44.769|
+weightInGrams<4> |weightInKilogramsInteger<3>  |   40.994|
+weightInGrams<4> |weightInKilogramsInteger<4>  |   38.539|
+weightInGrams<4> |weightInKilogramsInteger<5>  |   34.781|
+weightInGrams<4> |weightInKilogramsInteger<6>  |   32.555|
+weightInGrams<4> |weightInKilogramsInteger<7>  |   29.027|
+weightInGrams<4> |weightInKilogramsInteger<8>  |   25.492|
+weightInGrams<4> |weightInKilogramsInteger<9>  |   22.920|
+weightInGrams<4> |weightInKilogramsInteger<10> |   20.053|
+weightInGrams<4> |weightInKilogramsInteger<11> |   18.184|
+weightInGrams<4> |weightInKilogramsInteger<12> |   15.731|
+weightInGrams<4> |weightInKilogramsInteger<13> |   13.023|
+weightInGrams<5> |weightInKilogramsFraction<0> |   79.792|
+weightInGrams<5> |weightInKilogramsFraction<1> |   78.468|
+weightInGrams<5> |weightInKilogramsFraction<2> |   76.274|
+weightInGrams<5> |weightInKilogramsFraction<3> |   74.276|
+weightInGrams<5> |weightInKilogramsFraction<4> |   71.055|
+weightInGrams<5> |weightInKilogramsFraction<5> |   68.713|
+weightInGrams<5> |weightInKilogramsFraction<6> |   65.811|
+weightInGrams<5> |weightInKilogramsFraction<7> |   63.892|
+weightInGrams<5> |weightInKilogramsFraction<8> |   61.742|
+weightInGrams<5> |weightInKilogramsFraction<9> |   59.238|
+weightInGrams<5> |weightInKilogramsFraction<10>|   57.880|
+weightInGrams<5> |weightInKilogramsInteger<0>  |   50.181|
+weightInGrams<5> |weightInKilogramsInteger<1>  |   46.783|
+weightInGrams<5> |weightInKilogramsInteger<2>  |   44.907|
+weightInGrams<5> |weightInKilogramsInteger<3>  |   41.132|
+weightInGrams<5> |weightInKilogramsInteger<4>  |   38.677|
+weightInGrams<5> |weightInKilogramsInteger<5>  |   34.919|
+weightInGrams<5> |weightInKilogramsInteger<6>  |   32.693|
+weightInGrams<5> |weightInKilogramsInteger<7>  |   29.165|
+weightInGrams<5> |weightInKilogramsInteger<8>  |   25.630|
+weightInGrams<5> |weightInKilogramsInteger<9>  |   23.058|
+weightInGrams<5> |weightInKilogramsInteger<10> |   20.191|
+weightInGrams<5> |weightInKilogramsInteger<11> |   18.322|
+weightInGrams<5> |weightInKilogramsInteger<12> |   15.869|
+weightInGrams<5> |weightInKilogramsInteger<13> |   13.161|
+weightInGrams<6> |weightInKilogramsFraction<0> |   79.606|
+weightInGrams<6> |weightInKilogramsFraction<1> |   78.282|
+weightInGrams<6> |weightInKilogramsFraction<2> |   76.088|
+weightInGrams<6> |weightInKilogramsFraction<3> |   74.090|
+weightInGrams<6> |weightInKilogramsFraction<4> |   70.869|
+weightInGrams<6> |weightInKilogramsFraction<5> |   68.527|
+weightInGrams<6> |weightInKilogramsFraction<6> |   65.625|
+weightInGrams<6> |weightInKilogramsFraction<7> |   63.706|
+weightInGrams<6> |weightInKilogramsFraction<8> |   61.556|
+weightInGrams<6> |weightInKilogramsFraction<9> |   59.052|
+weightInGrams<6> |weightInKilogramsFraction<10>|   57.694|
+weightInGrams<6> |weightInKilogramsInteger<0>  |   49.995|
+weightInGrams<6> |weightInKilogramsInteger<1>  |   46.597|
+weightInGrams<6> |weightInKilogramsInteger<2>  |   44.721|
+weightInGrams<6> |weightInKilogramsInteger<3>  |   40.946|
+weightInGrams<6> |weightInKilogramsInteger<4>  |   38.491|
+weightInGrams<6> |weightInKilogramsInteger<5>  |   34.733|
+weightInGrams<6> |weightInKilogramsInteger<6>  |   32.507|
+weightInGrams<6> |weightInKilogramsInteger<7>  |   28.979|
+weightInGrams<6> |weightInKilogramsInteger<8>  |   25.444|
+weightInGrams<6> |weightInKilogramsInteger<9>  |   22.872|
+weightInGrams<6> |weightInKilogramsInteger<10> |   20.005|
+weightInGrams<6> |weightInKilogramsInteger<11> |   18.136|
+weightInGrams<6> |weightInKilogramsInteger<12> |   15.683|
+weightInGrams<6> |weightInKilogramsInteger<13> |   12.975|
+weightInGrams<7> |weightInKilogramsFraction<0> |   79.495|
+weightInGrams<7> |weightInKilogramsFraction<1> |   78.171|
+weightInGrams<7> |weightInKilogramsFraction<2> |   75.977|
+weightInGrams<7> |weightInKilogramsFraction<3> |   73.979|
+weightInGrams<7> |weightInKilogramsFraction<4> |   70.758|
+weightInGrams<7> |weightInKilogramsFraction<5> |   68.416|
+weightInGrams<7> |weightInKilogramsFraction<6> |   65.514|
+weightInGrams<7> |weightInKilogramsFraction<7> |   63.595|
+weightInGrams<7> |weightInKilogramsFraction<8> |   61.445|
+weightInGrams<7> |weightInKilogramsFraction<9> |   58.941|
+weightInGrams<7> |weightInKilogramsFraction<10>|   57.583|
+weightInGrams<7> |weightInKilogramsInteger<0>  |   49.884|
+weightInGrams<7> |weightInKilogramsInteger<1>  |   46.486|
+weightInGrams<7> |weightInKilogramsInteger<2>  |   44.610|
+weightInGrams<7> |weightInKilogramsInteger<3>  |   40.835|
+weightInGrams<7> |weightInKilogramsInteger<4>  |   38.380|
+weightInGrams<7> |weightInKilogramsInteger<5>  |   34.622|
+weightInGrams<7> |weightInKilogramsInteger<6>  |   32.396|
+weightInGrams<7> |weightInKilogramsInteger<7>  |   28.868|
+weightInGrams<7> |weightInKilogramsInteger<8>  |   25.333|
+weightInGrams<7> |weightInKilogramsInteger<9>  |   22.761|
+weightInGrams<7> |weightInKilogramsInteger<10> |   19.894|
+weightInGrams<7> |weightInKilogramsInteger<11> |   18.025|
+weightInGrams<7> |weightInKilogramsInteger<12> |   15.572|
+weightInGrams<7> |weightInKilogramsInteger<13> |   12.864|
+weightInGrams<8> |weightInKilogramsFraction<0> |   79.281|
+weightInGrams<8> |weightInKilogramsFraction<1> |   77.957|
+weightInGrams<8> |weightInKilogramsFraction<2> |   75.763|
+weightInGrams<8> |weightInKilogramsFraction<3> |   73.765|
+weightInGrams<8> |weightInKilogramsFraction<4> |   70.544|
+weightInGrams<8> |weightInKilogramsFraction<5> |   68.202|
+weightInGrams<8> |weightInKilogramsFraction<6> |   65.300|
+weightInGrams<8> |weightInKilogramsFraction<7> |   63.381|
+weightInGrams<8> |weightInKilogramsFraction<8> |   61.231|
+weightInGrams<8> |weightInKilogramsFraction<9> |   58.727|
+weightInGrams<8> |weightInKilogramsFraction<10>|   57.369|
+weightInGrams<8> |weightInKilogramsInteger<0>  |   49.670|
+weightInGrams<8> |weightInKilogramsInteger<1>  |   46.272|
+weightInGrams<8> |weightInKilogramsInteger<2>  |   44.396|
+weightInGrams<8> |weightInKilogramsInteger<3>  |   40.621|
+weightInGrams<8> |weightInKilogramsInteger<4>  |   38.166|
+weightInGrams<8> |weightInKilogramsInteger<5>  |   34.408|
+weightInGrams<8> |weightInKilogramsInteger<6>  |   32.182|
+weightInGrams<8> |weightInKilogramsInteger<7>  |   28.654|
+weightInGrams<8> |weightInKilogramsInteger<8>  |   25.119|
+weightInGrams<8> |weightInKilogramsInteger<9>  |   22.547|
+weightInGrams<8> |weightInKilogramsInteger<10> |   19.680|
+weightInGrams<8> |weightInKilogramsInteger<11> |   17.811|
+weightInGrams<8> |weightInKilogramsInteger<12> |   15.358|
+weightInGrams<8> |weightInKilogramsInteger<13> |   12.650|
+weightInGrams<9> |weightInKilogramsFraction<0> |   78.522|
+weightInGrams<9> |weightInKilogramsFraction<1> |   77.198|
+weightInGrams<9> |weightInKilogramsFraction<2> |   75.004|
+weightInGrams<9> |weightInKilogramsFraction<3> |   73.006|
+weightInGrams<9> |weightInKilogramsFraction<4> |   69.785|
+weightInGrams<9> |weightInKilogramsFraction<5> |   67.443|
+weightInGrams<9> |weightInKilogramsFraction<6> |   64.541|
+weightInGrams<9> |weightInKilogramsFraction<7> |   62.622|
+weightInGrams<9> |weightInKilogramsFraction<8> |   60.472|
+weightInGrams<9> |weightInKilogramsFraction<9> |   57.968|
+weightInGrams<9> |weightInKilogramsFraction<10>|   56.610|
+weightInGrams<9> |weightInKilogramsInteger<0>  |   49.048|
+weightInGrams<9> |weightInKilogramsInteger<1>  |   45.650|
+weightInGrams<9> |weightInKilogramsInteger<2>  |   43.774|
+weightInGrams<9> |weightInKilogramsInteger<3>  |   39.999|
+weightInGrams<9> |weightInKilogramsInteger<4>  |   37.544|
+weightInGrams<9> |weightInKilogramsInteger<5>  |   33.786|
+weightInGrams<9> |weightInKilogramsInteger<6>  |   31.560|
+weightInGrams<9> |weightInKilogramsInteger<7>  |   28.032|
+weightInGrams<9> |weightInKilogramsInteger<8>  |   24.497|
+weightInGrams<9> |weightInKilogramsInteger<9>  |   21.925|
+weightInGrams<9> |weightInKilogramsInteger<10> |   19.058|
+weightInGrams<9> |weightInKilogramsInteger<11> |   17.189|
+weightInGrams<9> |weightInKilogramsInteger<12> |   14.736|
+weightInGrams<9> |weightInKilogramsInteger<13> |   12.028|
+weightInGrams<10>|weightInKilogramsFraction<0> |   78.385|
+weightInGrams<10>|weightInKilogramsFraction<1> |   77.061|
+weightInGrams<10>|weightInKilogramsFraction<2> |   74.867|
+weightInGrams<10>|weightInKilogramsFraction<3> |   72.869|
+weightInGrams<10>|weightInKilogramsFraction<4> |   69.648|
+weightInGrams<10>|weightInKilogramsFraction<5> |   67.306|
+weightInGrams<10>|weightInKilogramsFraction<6> |   64.404|
+weightInGrams<10>|weightInKilogramsFraction<7> |   62.485|
+weightInGrams<10>|weightInKilogramsFraction<8> |   60.335|
+weightInGrams<10>|weightInKilogramsFraction<9> |   57.831|
+weightInGrams<10>|weightInKilogramsFraction<10>|   56.473|
+weightInGrams<10>|weightInKilogramsInteger<0>  |   48.865|
+weightInGrams<10>|weightInKilogramsInteger<1>  |   45.467|
+weightInGrams<10>|weightInKilogramsInteger<2>  |   43.591|
+weightInGrams<10>|weightInKilogramsInteger<3>  |   39.816|
+weightInGrams<10>|weightInKilogramsInteger<4>  |   37.361|
+weightInGrams<10>|weightInKilogramsInteger<5>  |   33.603|
+weightInGrams<10>|weightInKilogramsInteger<6>  |   31.377|
+weightInGrams<10>|weightInKilogramsInteger<7>  |   27.849|
+weightInGrams<10>|weightInKilogramsInteger<8>  |   24.314|
+weightInGrams<10>|weightInKilogramsInteger<9>  |   21.742|
+weightInGrams<10>|weightInKilogramsInteger<10> |   18.875|
+weightInGrams<10>|weightInKilogramsInteger<11> |   17.006|
+weightInGrams<10>|weightInKilogramsInteger<12> |   14.553|
+weightInGrams<10>|weightInKilogramsInteger<13> |   11.845|
+weightInGrams<11>|weightInKilogramsFraction<0> |   78.708|
+weightInGrams<11>|weightInKilogramsFraction<1> |   77.384|
+weightInGrams<11>|weightInKilogramsFraction<2> |   75.190|
+weightInGrams<11>|weightInKilogramsFraction<3> |   73.192|
+weightInGrams<11>|weightInKilogramsFraction<4> |   69.971|
+weightInGrams<11>|weightInKilogramsFraction<5> |   67.629|
+weightInGrams<11>|weightInKilogramsFraction<6> |   64.727|
+weightInGrams<11>|weightInKilogramsFraction<7> |   62.808|
+weightInGrams<11>|weightInKilogramsFraction<8> |   60.658|
+weightInGrams<11>|weightInKilogramsFraction<9> |   58.154|
+weightInGrams<11>|weightInKilogramsFraction<10>|   56.796|
+weightInGrams<11>|weightInKilogramsInteger<0>  |   49.237|
+weightInGrams<11>|weightInKilogramsInteger<1>  |   45.839|
+weightInGrams<11>|weightInKilogramsInteger<2>  |   43.963|
+weightInGrams<11>|weightInKilogramsInteger<3>  |   40.188|
+weightInGrams<11>|weightInKilogramsInteger<4>  |   37.733|
+weightInGrams<11>|weightInKilogramsInteger<5>  |   33.975|
+weightInGrams<11>|weightInKilogramsInteger<6>  |   31.749|
+weightInGrams<11>|weightInKilogramsInteger<7>  |   28.221|
+weightInGrams<11>|weightInKilogramsInteger<8>  |   24.686|
+weightInGrams<11>|weightInKilogramsInteger<9>  |   22.114|
+weightInGrams<11>|weightInKilogramsInteger<10> |   19.247|
+weightInGrams<11>|weightInKilogramsInteger<11> |   17.378|
+weightInGrams<11>|weightInKilogramsInteger<12> |   14.925|
+weightInGrams<11>|weightInKilogramsInteger<13> |   12.217|
+weightInGrams<12>|weightInKilogramsFraction<0> |   78.711|
+weightInGrams<12>|weightInKilogramsFraction<1> |   77.387|
+weightInGrams<12>|weightInKilogramsFraction<2> |   75.193|
+weightInGrams<12>|weightInKilogramsFraction<3> |   73.195|
+weightInGrams<12>|weightInKilogramsFraction<4> |   69.974|
+weightInGrams<12>|weightInKilogramsFraction<5> |   67.632|
+weightInGrams<12>|weightInKilogramsFraction<6> |   64.730|
+weightInGrams<12>|weightInKilogramsFraction<7> |   62.811|
+weightInGrams<12>|weightInKilogramsFraction<8> |   60.661|
+weightInGrams<12>|weightInKilogramsFraction<9> |   58.157|
+weightInGrams<12>|weightInKilogramsFraction<10>|   56.799|
+weightInGrams<12>|weightInKilogramsInteger<0>  |   49.239|
+weightInGrams<12>|weightInKilogramsInteger<1>  |   45.841|
+weightInGrams<12>|weightInKilogramsInteger<2>  |   43.965|
+weightInGrams<12>|weightInKilogramsInteger<3>  |   40.190|
+weightInGrams<12>|weightInKilogramsInteger<4>  |   37.735|
+weightInGrams<12>|weightInKilogramsInteger<5>  |   33.977|
+weightInGrams<12>|weightInKilogramsInteger<6>  |   31.751|
+weightInGrams<12>|weightInKilogramsInteger<7>  |   28.223|
+weightInGrams<12>|weightInKilogramsInteger<8>  |   24.688|
+weightInGrams<12>|weightInKilogramsInteger<9>  |   22.116|
+weightInGrams<12>|weightInKilogramsInteger<10> |   19.249|
+weightInGrams<12>|weightInKilogramsInteger<11> |   17.380|
+weightInGrams<12>|weightInKilogramsInteger<12> |   14.927|
+weightInGrams<12>|weightInKilogramsInteger<13> |   12.219|
+weightInGrams<13>|weightInKilogramsFraction<0> |   78.583|
+weightInGrams<13>|weightInKilogramsFraction<1> |   77.259|
+weightInGrams<13>|weightInKilogramsFraction<2> |   75.065|
+weightInGrams<13>|weightInKilogramsFraction<3> |   73.067|
+weightInGrams<13>|weightInKilogramsFraction<4> |   69.846|
+weightInGrams<13>|weightInKilogramsFraction<5> |   67.504|
+weightInGrams<13>|weightInKilogramsFraction<6> |   64.602|
+weightInGrams<13>|weightInKilogramsFraction<7> |   62.683|
+weightInGrams<13>|weightInKilogramsFraction<8> |   60.533|
+weightInGrams<13>|weightInKilogramsFraction<9> |   58.029|
+weightInGrams<13>|weightInKilogramsFraction<10>|   56.671|
+weightInGrams<13>|weightInKilogramsInteger<0>  |   49.106|
+weightInGrams<13>|weightInKilogramsInteger<1>  |   45.708|
+weightInGrams<13>|weightInKilogramsInteger<2>  |   43.832|
+weightInGrams<13>|weightInKilogramsInteger<3>  |   40.057|
+weightInGrams<13>|weightInKilogramsInteger<4>  |   37.602|
+weightInGrams<13>|weightInKilogramsInteger<5>  |   33.844|
+weightInGrams<13>|weightInKilogramsInteger<6>  |   31.618|
+weightInGrams<13>|weightInKilogramsInteger<7>  |   28.090|
+weightInGrams<13>|weightInKilogramsInteger<8>  |   24.555|
+weightInGrams<13>|weightInKilogramsInteger<9>  |   21.983|
+weightInGrams<13>|weightInKilogramsInteger<10> |   19.116|
+weightInGrams<13>|weightInKilogramsInteger<11> |   17.247|
+weightInGrams<13>|weightInKilogramsInteger<12> |   14.794|
+weightInGrams<13>|weightInKilogramsInteger<13> |   12.086|
+-----------------+-----------------------------+---------+
+
+
+Analysis completed Fri Nov 10 11:43:30 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 396 MB
+
+
+

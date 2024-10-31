@@ -1,0 +1,760 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: esquematicoAAAAAAAAAAAAAAA.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "esquematicoAAAAAAAAAAAAAAA.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "esquematicoAAAAAAAAAAAAAAA"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-ftg256
+
+---- Source Options
+Top Module Name                    : esquematicoAAAAAAAAAAAAAAA
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\nESTOR\Desktop\trabalhos\Balanca\testesss.v" into library work
+Parsing module <GramsToKilograms>.
+Analyzing Verilog file "C:\Users\nESTOR\Desktop\trabalhos\Balanca\esquematicoAAAAAAAAAAAAAAA.vf" into library work
+Parsing module <esquematicoAAAAAAAAAAAAAAA>.
+Analyzing Verilog file "C:\Users\nESTOR\Desktop\trabalhos\Balanca\geralbalanca.vf" into library work
+Parsing module <geralbalanca>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\nESTOR\Desktop\trabalhos\Balanca\esquematicoAAAAAAAAAAAAAAA.vf" Line 32: Port tara is not connected to this instance
+
+Elaborating module <esquematicoAAAAAAAAAAAAAAA>.
+
+Elaborating module <GramsToKilograms>.
+WARNING:HDLCompiler:413 - "C:\Users\nESTOR\Desktop\trabalhos\Balanca\testesss.v" Line 31: Result of 32-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\nESTOR\Desktop\trabalhos\Balanca\testesss.v" Line 32: Result of 20-bit expression is truncated to fit in 14-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <esquematicoAAAAAAAAAAAAAAA>.
+    Related source file is "C:\Users\nESTOR\Desktop\trabalhos\Balanca\esquematicoAAAAAAAAAAAAAAA.vf".
+INFO:Xst:3210 - "C:\Users\nESTOR\Desktop\trabalhos\Balanca\esquematicoAAAAAAAAAAAAAAA.vf" line 32: Output port <tara> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <esquematicoAAAAAAAAAAAAAAA> synthesized.
+
+Synthesizing Unit <GramsToKilograms>.
+    Related source file is "C:\Users\nESTOR\Desktop\trabalhos\Balanca\testesss.v".
+    Found 15-bit subtractor for signal <GND_2_o_GND_2_o_sub_1_OUT> created at line 31.
+    Found 10x10-bit multiplier for signal <GND_2_o_PWR_2_o_MuLt_4_OUT> created at line 32.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <GramsToKilograms> synthesized.
+
+Synthesizing Unit <div_32u_10u>.
+    Related source file is "".
+    Found 42-bit adder for signal <GND_3_o_b[9]_add_1_OUT> created at line 0.
+    Found 41-bit adder for signal <GND_3_o_b[9]_add_3_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_3_o_b[9]_add_5_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_3_o_b[9]_add_7_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_3_o_b[9]_add_9_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_3_o_b[9]_add_11_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_3_o_b[9]_add_13_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_3_o_b[9]_add_15_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_3_o_b[9]_add_17_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_3_o_b[9]_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[9]_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_3_o_add_63_OUT[31:0]> created at line 0.
+    Found 42-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_10u> synthesized.
+
+Synthesizing Unit <mod_32u_10u>.
+    Related source file is "".
+    Found 42-bit adder for signal <GND_4_o_b[9]_add_1_OUT> created at line 0.
+    Found 41-bit adder for signal <GND_4_o_b[9]_add_3_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_4_o_b[9]_add_5_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_4_o_b[9]_add_7_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_4_o_b[9]_add_9_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_4_o_b[9]_add_11_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_4_o_b[9]_add_13_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_4_o_b[9]_add_15_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_4_o_b[9]_add_17_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_4_o_b[9]_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[9]_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_4_o_add_65_OUT> created at line 0.
+    Found 42-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  33 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1025 Multiplexer(s).
+Unit <mod_32u_10u> synthesized.
+
+Synthesizing Unit <div_20u_10u>.
+    Related source file is "".
+    Found 30-bit adder for signal <GND_6_o_b[9]_add_1_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_6_o_b[9]_add_3_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_6_o_b[9]_add_5_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_6_o_b[9]_add_7_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_6_o_b[9]_add_9_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_6_o_b[9]_add_11_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_6_o_b[9]_add_13_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_6_o_b[9]_add_15_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_6_o_b[9]_add_17_OUT> created at line 0.
+    Found 21-bit adder for signal <GND_6_o_b[9]_add_19_OUT> created at line 0.
+    Found 20-bit adder for signal <a[19]_b[9]_add_21_OUT> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_23_OUT> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_25_OUT> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_27_OUT> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_29_OUT> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_31_OUT> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_33_OUT> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_35_OUT[19:0]> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_37_OUT[19:0]> created at line 0.
+    Found 20-bit adder for signal <a[19]_GND_6_o_add_39_OUT[19:0]> created at line 0.
+    Found 30-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Summary:
+	inferred  20 Adder/Subtractor(s).
+	inferred  21 Comparator(s).
+	inferred 343 Multiplexer(s).
+Unit <div_20u_10u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 10x10-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 86
+ 15-bit subtractor                                     : 1
+ 20-bit adder                                          : 10
+ 21-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 29-bit adder                                          : 1
+ 30-bit adder                                          : 1
+ 32-bit adder                                          : 45
+ 33-bit adder                                          : 2
+ 34-bit adder                                          : 2
+ 35-bit adder                                          : 2
+ 36-bit adder                                          : 2
+ 37-bit adder                                          : 2
+ 38-bit adder                                          : 2
+ 39-bit adder                                          : 2
+ 40-bit adder                                          : 2
+ 41-bit adder                                          : 2
+ 42-bit adder                                          : 2
+# Comparators                                          : 87
+ 20-bit comparator lessequal                           : 11
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 46
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 2
+ 37-bit comparator lessequal                           : 2
+ 38-bit comparator lessequal                           : 2
+ 39-bit comparator lessequal                           : 2
+ 40-bit comparator lessequal                           : 2
+ 41-bit comparator lessequal                           : 2
+ 42-bit comparator lessequal                           : 2
+# Multiplexers                                         : 2299
+ 1-bit 2-to-1 multiplexer                              : 2292
+ 10-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 10x10-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 86
+ 10-bit adder                                          : 1
+ 15-bit subtractor                                     : 1
+ 20-bit adder                                          : 20
+ 32-bit adder                                          : 64
+# Comparators                                          : 87
+ 20-bit comparator lessequal                           : 11
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 46
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 2
+ 37-bit comparator lessequal                           : 2
+ 38-bit comparator lessequal                           : 2
+ 39-bit comparator lessequal                           : 2
+ 40-bit comparator lessequal                           : 2
+ 41-bit comparator lessequal                           : 2
+ 42-bit comparator lessequal                           : 2
+# Multiplexers                                         : 2299
+ 1-bit 2-to-1 multiplexer                              : 2292
+ 10-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <esquematicoAAAAAAAAAAAAAAA> ...
+
+Optimizing unit <GramsToKilograms> ...
+
+Optimizing unit <div_20u_10u> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block esquematicoAAAAAAAAAAAAAAA, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : esquematicoAAAAAAAAAAAAAAA.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3288
+#      GND                         : 1
+#      INV                         : 6
+#      LUT2                        : 38
+#      LUT3                        : 455
+#      LUT4                        : 98
+#      LUT5                        : 798
+#      LUT6                        : 325
+#      MUXCY                       : 798
+#      MUXF7                       : 14
+#      VCC                         : 1
+#      XORCY                       : 754
+# IO Buffers                       : 42
+#      IBUF                        : 14
+#      OBUF                        : 28
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tftg256-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                 1720  out of  63400     2%  
+    Number used as Logic:              1720  out of  63400     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1720
+   Number with an unused Flip Flop:    1720  out of   1720   100%  
+   Number with an unused LUT:             0  out of   1720     0%  
+   Number of fully used LUT-FF pairs:     0  out of   1720     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          42
+ Number of bonded IOBs:                  42  out of    170    24%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 73.072ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1058622166173022500000000000000000000000000 / 25
+-------------------------------------------------------------------------
+Delay:               73.072ns (Levels of Logic = 159)
+  Source:            weightInGrams<3> (PAD)
+  Destination:       weightInKilogramsFraction<0> (PAD)
+
+  Data Path: weightInGrams<3> to weightInKilogramsFraction<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   0.001   0.790  weightInGrams_3_IBUF (weightInGrams_3_IBUF)
+     LUT6:I1->O           49   0.097   0.489  XLXI_6/Msub_GND_2_o_GND_2_o_sub_1_OUT_cy<8>11 (XLXI_6/Msub_GND_2_o_GND_2_o_sub_1_OUT_cy<8>)
+     LUT6:I4->O            1   0.097   0.000  XLXI_6/Msub_GND_2_o_GND_2_o_sub_1_OUT_cy<13>1113 (XLXI_6/Msub_GND_2_o_GND_2_o_sub_1_OUT_cy<13>1112)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_cy<19> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_cy<20> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_cy<21> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_cy<22> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_cy<22>)
+     XORCY:CI->O           6   0.370   0.716  XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_33_OUT_xor<23> (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[31]_GND_4_o_add_33_OUT<23>)
+     LUT6:I0->O            5   0.097   0.530  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0018_INV_1776_o21 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0018_INV_1776_o2)
+     LUT5:I2->O           46   0.097   0.665  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0018_INV_1776_o23 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0018_INV_1776_o)
+     LUT4:I0->O            3   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[27]_a[31]_MUX_2122_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[27]_a[31]_MUX_2122_o)
+     LUT5:I0->O            1   0.097   0.683  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0019_INV_1809_o26_SW0 (N30)
+     LUT6:I1->O           48   0.097   0.803  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0019_INV_1809_o26 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0019_INV_1809_o)
+     LUT6:I0->O            5   0.097   0.702  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[21]_a[31]_MUX_2160_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[21]_a[31]_MUX_2160_o)
+     LUT5:I0->O            1   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0020_INV_1842_o22 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0020_INV_1842_o21)
+     LUT6:I0->O           43   0.097   0.792  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0020_INV_1842_o24 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0020_INV_1842_o)
+     LUT5:I0->O            5   0.097   0.712  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[19]_a[31]_MUX_2194_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[19]_a[31]_MUX_2194_o)
+     LUT6:I0->O            2   0.097   0.561  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0021_INV_1875_o23 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0021_INV_1875_o22)
+     LUT6:I2->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0021_INV_1875_o25_SW0_G (N81)
+     MUXF7:I1->O           1   0.279   0.693  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0021_INV_1875_o25_SW0 (N38)
+     LUT6:I0->O           49   0.097   0.793  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0021_INV_1875_o25 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0021_INV_1875_o)
+     LUT5:I0->O            5   0.097   0.712  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[20]_a[31]_MUX_2225_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[20]_a[31]_MUX_2225_o)
+     LUT6:I0->O            1   0.097   0.683  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0022_INV_1908_o22 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0022_INV_1908_o21)
+     LUT5:I0->O            1   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0022_INV_1908_o26_SW0 (N36)
+     LUT6:I0->O           48   0.097   0.793  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0022_INV_1908_o26 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0022_INV_1908_o)
+     LUT5:I0->O            5   0.097   0.702  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[18]_a[31]_MUX_2259_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[18]_a[31]_MUX_2259_o)
+     LUT5:I0->O            1   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0023_INV_1941_o33 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0023_INV_1941_o32)
+     LUT6:I0->O           58   0.097   0.794  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0023_INV_1941_o35 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0023_INV_1941_o)
+     LUT5:I0->O            6   0.097   0.534  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[14]_a[31]_MUX_2295_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[14]_a[31]_MUX_2295_o)
+     LUT5:I2->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0024_INV_1974_o34_G (N63)
+     MUXF7:I1->O           1   0.279   0.693  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0024_INV_1974_o34 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0024_INV_1974_o33)
+     LUT6:I0->O           61   0.097   0.795  XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0024_INV_1974_o36 (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0024_INV_1974_o)
+     LUT5:I0->O            6   0.097   0.706  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[15]_a[31]_MUX_2326_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[15]_a[31]_MUX_2326_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<3>)
+     MUXCY:CI->O          48   0.253   0.793  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0025_INV_2007_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0025_INV_2007_o)
+     LUT5:I0->O            6   0.097   0.706  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[14]_a[31]_MUX_2359_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[14]_a[31]_MUX_2359_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<2>)
+     MUXCY:CI->O          39   0.253   0.403  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<3>)
+     LUT3:I2->O           12   0.097   0.734  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0026_INV_2040_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0026_INV_2040_o)
+     LUT5:I0->O            6   0.097   0.706  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[13]_a[31]_MUX_2392_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[13]_a[31]_MUX_2392_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<2>)
+     MUXCY:CI->O          41   0.253   0.403  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<3>)
+     LUT4:I3->O           12   0.097   0.734  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0027_INV_2073_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0027_INV_2073_o)
+     LUT5:I0->O            6   0.097   0.706  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[12]_a[31]_MUX_2425_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[12]_a[31]_MUX_2425_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<2>)
+     MUXCY:CI->O           5   0.253   0.314  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<3>)
+     LUT5:I4->O           87   0.097   0.799  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0028_INV_2106_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0028_INV_2106_o)
+     LUT5:I0->O            6   0.097   0.706  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[11]_a[31]_MUX_2458_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[11]_a[31]_MUX_2458_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<2>)
+     MUXCY:CI->O           1   0.253   0.295  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<3>)
+     LUT6:I5->O           59   0.097   0.794  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0029_INV_2139_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0029_INV_2139_o)
+     LUT5:I0->O            6   0.097   0.706  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[10]_a[31]_MUX_2491_o11 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[10]_a[31]_MUX_2491_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<4>)
+     MUXCY:CI->O          62   0.253   0.795  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0030_INV_2172_o_cy<5> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0030_INV_2172_o)
+     LUT5:I0->O            4   0.097   0.697  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[0]_a[31]_MUX_2533_o191 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[9]_a[31]_MUX_2524_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<3>)
+     MUXCY:CI->O          51   0.253   0.405  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<4>)
+     LUT3:I2->O           26   0.097   0.789  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0031_INV_2205_o_cy<5> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0031_INV_2205_o)
+     LUT5:I0->O            5   0.097   0.702  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[0]_a[31]_MUX_2565_o181 (XLXI_6/GND_2_o_PWR_2_o_mod_3/a[8]_a[31]_MUX_2557_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<3>)
+     MUXCY:CI->O           7   0.253   0.323  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<4>)
+     LUT4:I3->O           28   0.097   0.789  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0032_INV_2238_o_cy<5> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0032_INV_2238_o)
+     LUT5:I0->O            4   0.097   0.697  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_a[0]_a[31]_MUX_2597_o171 (XLXI_6/GND_2_o_PWR_2_o_mod_3/Madd_a[31]_GND_4_o_add_65_OUT_Madd_lut<7>)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_lut<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<0> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<1> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<2> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<3> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<3>)
+     MUXCY:CI->O           2   0.253   0.299  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<4> (XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<4>)
+     LUT5:I4->O           10   0.097   0.725  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mcompar_BUS_0033_INV_2271_o_cy<5> (XLXI_6/GND_2_o_PWR_2_o_mod_3/BUS_0033_INV_2271_o)
+     LUT6:I1->O           14   0.097   0.743  XLXI_6/GND_2_o_PWR_2_o_mod_3/Mmux_o81 (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd2_lut<10>)
+     LUT5:I0->O            1   0.097   0.693  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd2_xor<7>11 (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd_122)
+     LUT6:I0->O            1   0.097   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_lut<9> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_lut<9>)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<9> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<10> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<11> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<12> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<13> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<14> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_cy<14>)
+     XORCY:CI->O           1   0.370   0.693  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd3_xor<15> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd_183)
+     LUT6:I0->O            1   0.097   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd4_lut<17> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd4_lut<17>)
+     MUXCY:S->O            0   0.353   0.000  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd4_cy<17> (XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd4_cy<17>)
+     XORCY:CI->O           2   0.370   0.698  XLXI_6/Mmult_GND_2_o_PWR_2_o_MuLt_4_OUT_Madd4_xor<18> (XLXI_6/GND_2_o_PWR_2_o_MuLt_4_OUT<19>)
+     LUT6:I0->O           16   0.097   0.625  XLXI_6/GND_2_o_PWR_2_o_div_5/o<10>1 (weightInKilogramsFraction_10_OBUF)
+     LUT6:I2->O            6   0.097   0.706  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3199_o1821 (XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3199_o182)
+     LUT6:I1->O           14   0.097   0.743  XLXI_6/GND_2_o_PWR_2_o_div_5/o<9>11 (weightInKilogramsFraction_9_OBUF)
+     LUT5:I0->O            2   0.097   0.515  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3219_o172_SW0 (N10)
+     LUT4:I1->O            3   0.097   0.703  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3219_o172 (XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3219_o172)
+     LUT6:I0->O           13   0.097   0.739  XLXI_6/GND_2_o_PWR_2_o_div_5/o<8>1 (weightInKilogramsFraction_8_OBUF)
+     LUT5:I0->O            1   0.097   0.511  XLXI_6/GND_2_o_PWR_2_o_div_5/o<7>11_SW0 (N8)
+     LUT4:I1->O            4   0.097   0.393  XLXI_6/GND_2_o_PWR_2_o_div_5/o<7>11 (XLXI_6/GND_2_o_PWR_2_o_div_5/o<7>11)
+     LUT6:I4->O           19   0.097   0.767  XLXI_6/GND_2_o_PWR_2_o_div_5/o<7>12 (weightInKilogramsFraction_7_OBUF)
+     LUT5:I0->O            1   0.097   0.511  XLXI_6/GND_2_o_PWR_2_o_div_5/o<6>11_SW0 (N6)
+     LUT4:I1->O           11   0.097   0.557  XLXI_6/GND_2_o_PWR_2_o_div_5/o<6>11 (XLXI_6/GND_2_o_PWR_2_o_div_5/o<6>11)
+     LUT6:I3->O           16   0.097   0.364  XLXI_6/GND_2_o_PWR_2_o_div_5/o<6>1 (weightInKilogramsFraction_6_OBUF)
+     LUT6:I5->O           10   0.097   0.553  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3259_o1311 (XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3259_o131)
+     LUT6:I3->O            5   0.097   0.702  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3259_o15 (XLXI_6/GND_2_o_PWR_2_o_div_5/a[14]_a[19]_MUX_3245_o)
+     LUT6:I1->O            1   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_div_5/o<5>12_SW0 (N46)
+     LUT6:I0->O            1   0.097   0.295  XLXI_6/GND_2_o_PWR_2_o_div_5/o<5>12 (XLXI_6/GND_2_o_PWR_2_o_div_5/o<5>11)
+     LUT6:I5->O           41   0.097   0.801  XLXI_6/GND_2_o_PWR_2_o_div_5/o<5>13 (weightInKilogramsFraction_5_OBUF)
+     LUT6:I0->O            5   0.097   0.702  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3279_o141 (XLXI_6/GND_2_o_PWR_2_o_div_5/a[13]_a[19]_MUX_3266_o)
+     LUT5:I0->O            3   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_div_5/o<4>21 (XLXI_6/GND_2_o_PWR_2_o_div_5/o<4>2)
+     LUT5:I0->O           33   0.097   0.790  XLXI_6/GND_2_o_PWR_2_o_div_5/o<4>23 (weightInKilogramsFraction_4_OBUF)
+     LUT5:I0->O            5   0.097   0.702  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_a[0]_a[19]_MUX_3299_o1181 (XLXI_6/GND_2_o_PWR_2_o_div_5/a[8]_a[19]_MUX_3291_o)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/o<3>21_G (N65)
+     MUXF7:I1->O           2   0.279   0.697  XLXI_6/GND_2_o_PWR_2_o_div_5/o<3>21 (XLXI_6/GND_2_o_PWR_2_o_div_5/o<3>2)
+     LUT6:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/o<3>24_G (N83)
+     MUXF7:I1->O          44   0.279   0.792  XLXI_6/GND_2_o_PWR_2_o_div_5/o<3>24 (weightInKilogramsFraction_3_OBUF)
+     LUT5:I0->O            3   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_n119321 (XLXI_6/GND_2_o_PWR_2_o_div_5/n1193<10>)
+     LUT5:I0->O            1   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_div_5/o<2>24_SW0 (N42)
+     LUT6:I0->O           25   0.097   0.789  XLXI_6/GND_2_o_PWR_2_o_div_5/o<2>24 (weightInKilogramsFraction_2_OBUF)
+     LUT5:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_n11971711 (XLXI_6/GND_2_o_PWR_2_o_div_5/Mmux_n1197171)
+     MUXCY:S->O            1   0.353   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<6> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<7> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<8> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<9> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<10> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<11> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<12> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<13> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<14> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<15> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<16> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<17> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<17>)
+     MUXCY:CI->O           0   0.023   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<18> (XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_cy<18>)
+     XORCY:CI->O           1   0.370   0.693  XLXI_6/GND_2_o_PWR_2_o_div_5/Madd_a[19]_GND_6_o_add_39_OUT[19:0]_xor<19> (XLXI_6/GND_2_o_PWR_2_o_div_5/a[19]_GND_6_o_add_39_OUT[19:0]<19>)
+     LUT6:I0->O            1   0.097   0.693  XLXI_6/GND_2_o_PWR_2_o_div_5/o<0>22 (XLXI_6/GND_2_o_PWR_2_o_div_5/o<0>21)
+     LUT6:I0->O            1   0.097   0.000  XLXI_6/GND_2_o_PWR_2_o_div_5/o<0>26_G (N59)
+     MUXF7:I1->O           1   0.279   0.279  XLXI_6/GND_2_o_PWR_2_o_div_5/o<0>26 (weightInKilogramsFraction_0_OBUF)
+     OBUF:I->O                 0.000          weightInKilogramsFraction_0_OBUF (weightInKilogramsFraction<0>)
+    ----------------------------------------
+    Total                     73.072ns (18.708ns logic, 54.364ns route)
+                                       (25.6% logic, 74.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.91 secs
+ 
+--> 
+
+Total memory usage is 261708 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

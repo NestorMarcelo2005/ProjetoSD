@@ -1,0 +1,26 @@
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.v -lang verilog -prj Balanca -o centimospaeuros.spl -module centimospaeuros -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeuros.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeuros.sym 

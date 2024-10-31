@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/balanca.v -lang verilog -prj Balanca -o bin2bcd.spl -module bin2bcd -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 bin2bcd.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/bin2bcd.sym 

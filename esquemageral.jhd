@@ -1,0 +1,7 @@
+MODULE esquemageral
+	SUBMODULE multiplicador
+		INSTANCE XLXI_14
+	SUBMODULE GramsToKilograms
+		INSTANCE XLXI_15
+	SUBMODULE centimospaeuros
+		INSTANCE XLXI_19

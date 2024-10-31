@@ -1,0 +1,41 @@
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+sch2hdl -intstyle ise -family artix7 -verilog esquematicoAAAAAAAAAAAAAAA_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.sch 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-ftg256-3 esquematicoAAAAAAAAAAAAAAA.ngc esquematicoAAAAAAAAAAAAAAA.ngd  
+map -intstyle ise -p xc7a100t-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ngd esquematicoAAAAAAAAAAAAAAA.pcf 
+map -intstyle ise -p xc7a100t-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ngd esquematicoAAAAAAAAAAAAAAA.pcf 
+par -w -intstyle ise -ol high -mt off esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ncd esquematicoAAAAAAAAAAAAAAA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml esquematicoAAAAAAAAAAAAAAA.twx esquematicoAAAAAAAAAAAAAAA.ncd -o esquematicoAAAAAAAAAAAAAAA.twr esquematicoAAAAAAAAAAAAAAA.pcf 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-ftg256-3 esquematicoAAAAAAAAAAAAAAA.ngc esquematicoAAAAAAAAAAAAAAA.ngd  
+map -intstyle ise -p xc7a100t-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ngd esquematicoAAAAAAAAAAAAAAA.pcf 
+par -w -intstyle ise -ol high -mt off esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ncd esquematicoAAAAAAAAAAAAAAA.pcf 
+sch2hdl -intstyle ise -family artix7 -verilog esquematicoAAAAAAAAAAAAAAA_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.sch 
+xst -intstyle ise -ifn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.xst" -ofn "C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim esquematicoAAAAAAAAAAAAAAA.ngc balanca_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-ftg256-3 esquematicoAAAAAAAAAAAAAAA.ngc esquematicoAAAAAAAAAAAAAAA.ngd  
+map -intstyle ise -p xc7a100t-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ngd esquematicoAAAAAAAAAAAAAAA.pcf 
+par -w -intstyle ise -ol high -mt off esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ncd esquematicoAAAAAAAAAAAAAAA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml esquematicoAAAAAAAAAAAAAAA.twx esquematicoAAAAAAAAAAAAAAA.ncd -o esquematicoAAAAAAAAAAAAAAA.twr esquematicoAAAAAAAAAAAAAAA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml esquematicoAAAAAAAAAAAAAAA_preroute.twx esquematicoAAAAAAAAAAAAAAA_map.ncd -o esquematicoAAAAAAAAAAAAAAA_preroute.twr esquematicoAAAAAAAAAAAAAAA.pcf 
+netgen -intstyle ise -s 3  -pcf esquematicoAAAAAAAAAAAAAAA.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim esquematicoAAAAAAAAAAAAAAA_map.ncd balanca_map.v 
+netgen -intstyle ise -s 3  -pcf esquematicoAAAAAAAAAAAAAAA.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim esquematicoAAAAAAAAAAAAAAA_map.ncd balanca_map.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-ftg256-3 esquematicoAAAAAAAAAAAAAAA.ngc esquematicoAAAAAAAAAAAAAAA.ngd  
+map -intstyle ise -p xc7a100t-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ngd esquematicoAAAAAAAAAAAAAAA.pcf 
+par -w -intstyle ise -ol high -mt off esquematicoAAAAAAAAAAAAAAA_map.ncd esquematicoAAAAAAAAAAAAAAA.ncd esquematicoAAAAAAAAAAAAAAA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml esquematicoAAAAAAAAAAAAAAA.twx esquematicoAAAAAAAAAAAAAAA.ncd -o esquematicoAAAAAAAAAAAAAAA.twr esquematicoAAAAAAAAAAAAAAA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml esquematicoAAAAAAAAAAAAAAA_preroute.twx esquematicoAAAAAAAAAAAAAAA_map.ncd -o esquematicoAAAAAAAAAAAAAAA_preroute.twr esquematicoAAAAAAAAAAAAAAA.pcf 
+netgen -intstyle ise -s 3  -pcf esquematicoAAAAAAAAAAAAAAA.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim esquematicoAAAAAAAAAAAAAAA_map.ncd balanca_map.v 

@@ -1,0 +1,9 @@
+[Inputs]
+=centimos[8:0]=
+[Outputs]
+=euros_inteiro[13:0]=
+=euros_fracao[13:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel centimosparaeuros
+

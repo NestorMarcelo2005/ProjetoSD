@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeurosssssssss.v -lang verilog -prj Balanca -o centimospaeurosssssssss.spl -module centimospaeurosssssssss -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 centimospaeurosssssssss.spl C:/Users/nESTOR/Desktop/trabalhos/Balanca/centimospaeurosssssssss.sym 

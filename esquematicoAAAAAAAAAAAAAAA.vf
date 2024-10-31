@@ -1,0 +1,37 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : esquematicoAAAAAAAAAAAAAAA.vf
+// /___/   /\     Timestamp : 11/10/2023 11:37:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/esquematicoAAAAAAAAAAAAAAA.sch
+//Design Name: esquematicoAAAAAAAAAAAAAAA
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module esquematicoAAAAAAAAAAAAAAA(weightInGrams, 
+                                  weightInKilogramsFraction, 
+                                  weightInKilogramsInteger);
+
+    input [13:0] weightInGrams;
+   output [13:0] weightInKilogramsFraction;
+   output [13:0] weightInKilogramsInteger;
+   
+   
+   GramsToKilograms  XLXI_6 (.weightInGrams(weightInGrams[13:0]), 
+                            
+         .weightInKilogramsFraction(weightInKilogramsFraction[13:0]), 
+                            
+         .weightInKilogramsInteger(weightInKilogramsInteger[13:0]));
+endmodule

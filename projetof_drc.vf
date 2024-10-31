@@ -1,0 +1,79 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : projetof_drc.vf
+// /___/   /\     Timestamp : 11/11/2023 12:19:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family artix7 -verilog projetof_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/projetof.sch
+//Design Name: projetof
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module multiplicador_MUSER_projetof();
+
+   
+   
+endmodule
+`timescale 1ns / 1ps
+
+module projetof(centimos, 
+                pesoemgramas, 
+                Peso_Final_decimal, 
+                Peso_Final_unidades, 
+                Preco_Parte_Decimal, 
+                Preco_Parte_Inteira, 
+                Preco_Por_Kg_Parte_Decimal, 
+                Preco_Por_Kg_Parte_Inteira);
+
+    input [8:0] centimos;
+    input [13:0] pesoemgramas;
+   output [15:0] Peso_Final_decimal;
+   output [15:0] Peso_Final_unidades;
+   output [15:0] Preco_Parte_Decimal;
+   output [15:0] Preco_Parte_Inteira;
+   output [15:0] Preco_Por_Kg_Parte_Decimal;
+   output [15:0] Preco_Por_Kg_Parte_Inteira;
+   
+   wire [13:0] euros_fracao;
+   wire [13:0] euros_inteiro;
+   wire [13:0] weightInKilogramsFraction;
+   wire [13:0] weightInKilogramsInteger;
+   wire [13:0] XLXN_18;
+   wire [13:0] XLXN_19;
+   
+   bin2bcd  XLXI_4 (.bin(weightInKilogramsInteger[13:0]), 
+                   .bcd(Peso_Final_unidades[15:0]));
+   bin2bcd  XLXI_5 (.bin(weightInKilogramsFraction[13:0]), 
+                   .bcd(Peso_Final_decimal[15:0]));
+   bin2bcd  XLXI_6 (.bin(euros_inteiro[13:0]), 
+                   .bcd(Preco_Por_Kg_Parte_Inteira[15:0]));
+   bin2bcd  XLXI_7 (.bin(euros_fracao[13:0]), 
+                   .bcd(Preco_Por_Kg_Parte_Decimal[15:0]));
+   bin2bcd  XLXI_8 (.bin(XLXN_18[13:0]), 
+                   .bcd(Preco_Parte_Inteira[15:0]));
+   bin2bcd  XLXI_9 (.bin(XLXN_19[13:0]), 
+                   .bcd(Preco_Parte_Decimal[15:0]));
+   Gramasparaquilogramas  XLXI_11 (.pesoemgramas(pesoemgramas[13:0]), 
+                                  
+         .pesoemquilogramasfracao(weightInKilogramsFraction[13:0]), 
+                                  
+         .pesoemquilogramasinteiro(weightInKilogramsInteger[13:0]));
+   multiplicador_MUSER_projetof  XLXI_13 (.centimos(centimos[8:0]), 
+                                         .pesoemgramas(pesoemgramas[13:0]), 
+                                         .precofinalfracao(XLXN_19[13:0]), 
+                                         .precofinalinteiro(XLXN_18[13:0]));
+   centimosparaeuros  XLXI_14 (.centimos(centimos[8:0]), 
+                              .euros_fracao(euros_fracao[13:0]), 
+                              .euros_inteiro(euros_inteiro[13:0]));
+endmodule

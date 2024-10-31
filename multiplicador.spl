@@ -1,0 +1,10 @@
+[Inputs]
+=pesoemgramas[13:0]=
+=centimos[8:0]=
+[Outputs]
+=precofinalinteiro[13:0]=
+=precofinalfracao[13:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel multiplicador
+

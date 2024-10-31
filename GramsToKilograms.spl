@@ -1,0 +1,9 @@
+[Inputs]
+=weightInGrams[13:0]=
+[Outputs]
+=weightInKilogramsInteger[13:0]=
+=weightInKilogramsFraction[13:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel GramsToKilograms
+

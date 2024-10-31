@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : multi.vf
+// /___/   /\     Timestamp : 11/10/2023 13:48:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/nESTOR/Desktop/trabalhos/Balanca/multi.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/multi.sch
+//Design Name: multi
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module multiplicador_MUSER_multi();
+
+   
+   
+endmodule
+`timescale 1ns / 1ps
+
+module multi(centimos, 
+             weightInGrams, 
+             precof, 
+             precotara);
+
+    input [13:0] centimos;
+    input [13:0] weightInGrams;
+   output [18:0] precof;
+   output [25:0] precotara;
+   
+   
+   multiplicador_MUSER_multi  XLXI_1 (.centimos(centimos[13:0]), 
+                                     .weightInGrams(weightInGrams[13:0]), 
+                                     .precof(precof[18:0]), 
+                                     .precotara(precotara[25:0]));
+endmodule

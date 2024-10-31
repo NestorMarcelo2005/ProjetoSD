@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : projetosembcd_drc.vf
+// /___/   /\     Timestamp : 11/10/2023 15:00:47
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family artix7 -verilog projetosembcd_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/projetosembcd.sch
+//Design Name: projetosembcd
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module projetosembcd(centimos, 
+                     weightInGrams, 
+                     Peso_Final_decimal, 
+                     Peso_Final_unidades, 
+                     Preco_Parte_Decimal, 
+                     Preco_Parte_Inteira, 
+                     Preco_Por_Kg_Parte_Decimal, 
+                     Preco_Por_Kg_Parte_Inteira);
+
+    input [13:0] centimos;
+    input [13:0] weightInGrams;
+   output [13:0] Peso_Final_decimal;
+   output [13:0] Peso_Final_unidades;
+   output [13:0] Preco_Parte_Decimal;
+   output [13:0] Preco_Parte_Inteira;
+   output [13:0] Preco_Por_Kg_Parte_Decimal;
+   output [13:0] Preco_Por_Kg_Parte_Inteira;
+   
+   
+   centimospaeurosssssssss  XLXI_1 (.centimos(centimos[13:0]), 
+                                   
+         .euros_fracao(Preco_Por_Kg_Parte_Decimal[13:0]), 
+                                   
+         .euros_inteiro(Preco_Por_Kg_Parte_Inteira[13:0]));
+   GramsToKilograms  XLXI_2 (.weightInGrams(weightInGrams[13:0]), 
+                            
+         .weightInKilogramsFraction(Peso_Final_decimal[13:0]), 
+                            
+         .weightInKilogramsInteger(Peso_Final_unidades[13:0]));
+   asfasfdsfs  XLXI_3 (.centimos(centimos[13:0]), 
+                      .pesoemgramas(weightInGrams[13:0]), 
+                      .precof(Preco_Parte_Decimal[13:0]), 
+                      .precotara(Preco_Parte_Inteira[13:0]));
+endmodule

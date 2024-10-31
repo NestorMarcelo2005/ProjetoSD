@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family artix7 -refsym projetosembcd C:/Users/nESTOR/Desktop/trabalhos/Balanca/projetosembcd.sch C:/Users/nESTOR/Desktop/trabalhos/Balanca/projetosembcd.sym 
+sch2hdl -intstyle ise -family artix7 -verilog projetosembcd_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/projetosembcd.sch 

@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family artix7 -verilog TRUES_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/TRUES.sch 
+sch2sym -intstyle ise -family artix7 -refsym TRUES C:/Users/nESTOR/Desktop/trabalhos/Balanca/TRUES.sch C:/Users/nESTOR/Desktop/trabalhos/Balanca/TRUES.sym 

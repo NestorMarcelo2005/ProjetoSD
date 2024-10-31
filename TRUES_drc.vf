@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : TRUES_drc.vf
+// /___/   /\     Timestamp : 11/10/2023 13:30:03
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family artix7 -verilog TRUES_drc.vf -w C:/Users/nESTOR/Desktop/trabalhos/Balanca/TRUES.sch
+//Design Name: TRUES
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module multiplicador_MUSER_TRUES();
+
+   
+   
+endmodule
+`timescale 1ns / 1ps
+
+module TRUES(centimos, 
+             XLXN_3, 
+             XLXN_5, 
+             XLXN_1, 
+             XLXN_2);
+
+    input [13:0] centimos;
+    input [13:0] XLXN_3;
+    input [13:0] XLXN_5;
+   output [13:0] XLXN_1;
+   output [13:0] XLXN_2;
+   
+   
+   multiplicador_MUSER_TRUES  XLXI_1 (.centimos(centimos[13:0]), 
+                                     .tara(XLXN_5[13:0]), 
+                                     .weightInGrams(XLXN_3[13:0]), 
+                                     .precof(XLXN_2[13:0]), 
+                                     .precotara(XLXN_1[13:0]));
+endmodule
